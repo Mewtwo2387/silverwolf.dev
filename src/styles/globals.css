@@ -13,11 +13,11 @@ body {
 }
 
 /* Add these if you want to preserve the original status colors */
-.complete-online {
+.online {
   color: lightgreen;
 }
 
-.complete-offline {
+.offline {
   color: lightyellow;
 }
 

@@ -169,19 +169,35 @@ export default function Home() {
             ))}
             
             <TabCard
-              title="Vajrada Amethyst Sliver"
+              title="Cosmic Fragment"
               subtitle="A bunch of tiny projects I did when I'm bored"
-              leftImage="/sliver.webp"
+              leftImage="/fragment.webp"
               rightImage="/arrow-right.png"
               onClick={() => setActiveTab(Tab.TINY)}
             />
-            
-            {/* Add other navigation cards similarly */}
+
+            <TabCard
+              title="Time Waits For No One"
+              subtitle="Projects done in a limited time during gamejams or hackathons"
+              leftImage="/time.webp"
+              rightImage="/arrow-right.png"
+              onClick={() => setActiveTab(Tab.GAMEJAM)}
+            />
+
+            <TabCard
+              title="Forgotten Hall"
+              subtitle="A bunch of old and abandoned projects"
+              leftImage="/forgotten.webp"
+              rightImage="/arrow-right.png"
+              onClick={() => setActiveTab(Tab.OLD)}
+            />
           </div>
+
+
         )}
 
         {activeTab === Tab.TINY && (
-          <div className="space-y-6">
+          <div className="space-y-6 pb-8">
             {tinyProjects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
@@ -195,7 +211,35 @@ export default function Home() {
           </div>
         )}
 
-        {/* Add similar sections for other tabs */}
+        {activeTab === Tab.GAMEJAM && (
+          <div className="space-y-6 pb-8">
+            {gamejamProjects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
+
+            <TabCard
+              title="Back to Main"
+              subtitle="Return to the larger projects"
+              leftImage="/arrow-left.png"
+              onClick={() => setActiveTab(Tab.MAIN)}
+            />
+          </div>
+        )}
+
+        {activeTab === Tab.OLD && (
+          <div className="space-y-6 pb-8">
+            {oldProjects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
+
+            <TabCard
+              title="Back to Main"
+              subtitle="Return to the larger projects"
+              leftImage="/arrow-left.png"
+              onClick={() => setActiveTab(Tab.MAIN)}
+            />
+          </div>
+        )}
 
       </div>
     </div>
