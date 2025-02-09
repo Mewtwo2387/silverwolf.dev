@@ -163,7 +163,7 @@ export default function Home() {
       <TopBar />
       <div className="pt-24">
         {activeTab === Tab.MAIN && (
-          <div className="space-y-6">
+          <div className="space-y-6 pb-8">
             {mainProjects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}

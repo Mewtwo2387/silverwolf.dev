@@ -20,8 +20,8 @@ export default function ProjectCard({
   isInternalLink = true
 }: ProjectCardProps) {
   return (
-    <div className="mx-[5%] mb-4 relative rounded-lg border-3 border-gray-500 
-                   hover:border-purple-500 transition-all group cursor-pointer"
+    <div className="mx-[5%] mb-4 relative rounded-lg border-[3px] border-gray-500 border-solid
+                   hover:border-purple-500 transition-all group cursor-pointer bg-black/30"
          style={{ 
            backgroundImage: backgroundImage ? 
              `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${backgroundImage})` : '',

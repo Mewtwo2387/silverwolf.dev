@@ -8,8 +8,8 @@ interface TabCardProps {
 
 export default function TabCard({ title, subtitle, onClick, leftImage, rightImage }: TabCardProps) {
   return (
-    <div className="mx-[5%] mb-4 bg-[#333] rounded-lg border-3 border-gray-500 
-                   hover:border-purple-500 transition-all cursor-pointer"
+    <div className="mx-[5%] mb-4 rounded-lg border-[3px] border-gray-500 border-solid
+                   hover:border-purple-500 transition-all cursor-pointer bg-black/70"
          onClick={onClick}>
       <table className="w-full mt-3 mx-2">
         <tbody>
