@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/background.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-family: var(--font-pixel);
+}
+
+/* Add these if you want to preserve the original status colors */
+.complete-online {
+  color: lightgreen;
+}
+
+.complete-offline {
+  color: lightyellow;
+}
+
+.discontinued {
+  color: lightcoral;
+}
