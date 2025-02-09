@@ -2,6 +2,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   link: string;
+  hoverText: string;
   status: string;
   statusType: 'online' | 'offline' | 'discontinued';
   backgroundImage?: string;
@@ -12,6 +13,7 @@ export default function ProjectCard({
   title,
   description,
   link,
+  hoverText,
   status,
   statusType,
   backgroundImage,
@@ -29,7 +31,7 @@ export default function ProjectCard({
       
       <div className="absolute inset-0 bg-black/50 flex items-center justify-center
                      opacity-0 group-hover:opacity-100 transition-opacity">
-        <h3 className="text-2xl">Click to enter!</h3>
+        <h3 className="text-2xl">{hoverText}</h3>
       </div>
 
       <div className="p-6">
