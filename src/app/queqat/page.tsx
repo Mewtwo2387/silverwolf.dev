@@ -517,7 +517,7 @@ export default function QueQat() {
                 : 'opacity-0 translate-y-8'
             }`}
           >
-            <h2 className="text-2xl font-bold mb-4 text-purple-400">What's next...?</h2>
+            <h2 className="text-2xl font-bold mb-4 text-purple-400">What&apos;s next...?</h2>
             <p className="text-lg leading-relaxed mb-6">
               Similar approaches could be applied to other scenarios that involves multiple people waiting, for example, elevator systems and traffic systems.
               <br />
