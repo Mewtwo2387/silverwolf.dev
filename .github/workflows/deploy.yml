@@ -15,9 +15,8 @@ jobs:
           host: 165.232.171.127
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
-            cd /root/silverwolf
+            cd /var/www/silverwolf.dev
             git pull origin master
             npm ci
             npm run build
