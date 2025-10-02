@@ -37,7 +37,7 @@ export default function Home() {
     {
       title: "Silverwolf Bot",
       description: "A multipurpose discord bot made by Ei and Xei with... a lot of gambling. And 90 other useless commands.",
-      link: "/silverwolf",
+      link: "https://github.com/Mewtwo2387/Silverwolf",
       hoverText: "Click for more info!",
       status: "Active Development",
       statusType: "online" as StatusType
@@ -52,7 +52,7 @@ export default function Home() {
     },
     {
       title: "QueQat",
-      description: "An AI made with Deep Q-Learning, used to reduce queueing time in multi-queue systems where different people have different service times, such as supermarkets. QueQat can assign customers to queues based on their service time, and can reduce the total waiting time by approximately 20%.",
+      description: "An AI made with Deep Q-Learning, used to reduce queueing time in multi-queue systems where different people have different service times, such as supermarkets. QueQat can assign customers to queues based on their service time, and can reduce the total waiting time by approximately 30%.",
       link: "/queqat",
       hoverText: "Click for more info!",
       status: "Completed, but server is offline.",
@@ -61,7 +61,7 @@ export default function Home() {
     {
       title: "DseGPT",
       description: "A website to assist English teachers in marking essays, using ChatGPT. It will give a grade and help teachers write comments based on custom marking schemes and instructions, while also providing grammar corrections and sample rewrites.",
-      link: "/dsegpt",
+      link: "/",
       hoverText: "Click for nothing.",
       status: "It's from my internship 2 years ago, but eh, it's probably dead.",
       statusType: "discontinued" as StatusType
